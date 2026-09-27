@@ -109,28 +109,27 @@
   <!-- Main Responsive Wrapper -->
   <div class="w-full max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-5xl bg-white min-h-screen shadow-2xl flex flex-col relative pb-safe">
 
-    <!-- Header -->
-    <header class="ocean-gradient text-white px-3 sm:px-6 py-2.5 shadow-md sticky top-0 z-30 flex items-center justify-between gap-1.5">
+    <!-- Header: 緊湊型機票住宿按鈕 -->
+    <header class="ocean-gradient text-white px-3 sm:px-6 py-2 shadow-md sticky top-0 z-30 flex items-center justify-between gap-1.5">
       <div class="flex items-center gap-2 min-w-0 flex-shrink">
-        <span class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-base sm:text-lg shadow-inner flex-shrink-0">
+        <span class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-sm sm:text-base shadow-inner flex-shrink-0">
           🐷
         </span>
         <div class="min-w-0">
-          <h1 class="text-[15px] sm:text-lg md:text-xl font-black font-display tracking-tight leading-none whitespace-nowrap">
+          <h1 class="text-[14px] sm:text-lg md:text-xl font-black font-display tracking-tight leading-none whitespace-nowrap">
             豬豬父女沖繩旅行
           </h1>
-          <div class="text-[11px] sm:text-xs text-sky-100 font-bold mt-1 leading-none whitespace-nowrap">
+          <div class="text-[10px] sm:text-xs text-sky-100 font-bold mt-1 leading-none whitespace-nowrap">
             11/30 (一) – 12/5 (六) 專屬手冊
           </div>
         </div>
       </div>
 
-      <!-- Tactile Button for Flights & Hotels -->
-      <button type="button" onclick="openModal('flightHotelModal')" class="flex-shrink-0 flex items-center gap-1.5 bg-gradient-to-b from-amber-300 to-amber-400 hover:from-amber-200 active:translate-y-0.5 text-slate-900 px-3 py-1.5 sm:py-2 rounded-xl border-2 border-white shadow-[0_3px_0_#b45309] text-xs sm:text-sm font-black transition-all cursor-pointer group" aria-label="查看機票與住宿">
-        <span class="text-xs sm:text-base leading-none">🎫</span>
+      <!-- Compact Button for Flights & Hotels -->
+      <button type="button" onclick="openModal('flightHotelModal')" class="flex-shrink-0 flex items-center gap-1 bg-gradient-to-b from-amber-300 to-amber-400 hover:from-amber-200 active:translate-y-0.5 text-slate-900 px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-lg sm:rounded-xl border border-white/90 shadow-[0_2px_0_#b45309] text-[11px] sm:text-xs font-black transition-all cursor-pointer" aria-label="查看機票與住宿">
         <span class="tracking-tight leading-none">機票住宿</span>
-        <span class="bg-rose-600 text-white text-[10px] sm:text-xs px-1.5 py-0.5 rounded-md font-black leading-none shadow-sm">
-          點開 👆
+        <span class="bg-rose-600 text-white text-[9px] sm:text-[10px] px-1 py-0.5 rounded font-black leading-none shadow-sm">
+          點開
         </span>
       </button>
     </header>
@@ -213,21 +212,6 @@
             </a>
           </div>
 
-          <!-- D1 新增行程：沖繩世界文化王國體驗 -->
-          <div class="bg-emerald-50/80 border-2 border-emerald-300 rounded-2xl p-4 shadow-sm space-y-2.5">
-            <div class="flex items-center justify-between">
-              <span class="bg-emerald-600 text-white text-xs font-black px-3 py-1 rounded-xl shadow-sm">⏰ 15:00 新增推薦體驗</span>
-              <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">豐富文化體驗</span>
-            </div>
-            <h3 class="text-base font-black text-slate-800">沖繩世界文化王國（體驗豐富琉球傳統文化）</h3>
-            <p class="text-sm text-slate-700 leading-relaxed font-medium">
-              15:00 逛沖繩世界！園區內有很多特色文化體驗可以玩，包括<strong>琉球傳統服飾試穿留念</strong>、<strong>琉球玻璃工藝</strong>、<strong>傳統陶藝與手作點心</strong>等，環境平整好走，爸爸也能輕鬆融入熱鬧的傳統琉球風情中。
-            </p>
-            <a href="https://maps.google.com/?q=Okinawa+World" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-emerald-600 text-white rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow hover:bg-emerald-700 transition">
-              <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
-            </a>
-          </div>
-
           <!-- Route Switcher Selector -->
           <div class="bg-amber-50/80 border-2 border-amber-200 rounded-2xl p-3.5 space-y-2">
             <div class="flex items-center justify-between">
@@ -247,42 +231,54 @@
 
           <!-- PLAN A DETAIL CARDS -->
           <div id="plan-a-block" class="space-y-3 pl-2 border-l-4 border-ocean-400">
-            <div class="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm space-y-2">
+            <div class="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm space-y-2.5">
               <div class="flex items-center justify-between">
                 <span class="text-xs font-black text-ocean-700 bg-sky-100 px-2.5 py-0.5 rounded-lg">⏰ 15:30</span>
                 <span class="text-xs text-slate-500 font-bold">市區飯店</span>
               </div>
               <h4 class="text-base font-black text-slate-800">Hotel Grand Consort Naha 入住</h4>
+              <div class="rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
+                <img src="https://lh3.googleusercontent.com/d/1mXCt4Ggq_HEcSI4vY_fxcQw04iuKEkIc" alt="Hotel Grand Consort Naha" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1mXCt4Ggq_HEcSI4vY_fxcQw04iuKEkIc')">
+              </div>
               <p class="text-sm text-slate-600 leading-relaxed">辦妥入住放好大行李，在房間稍作整裝休息，接著輕鬆步行逛市區。</p>
               <a href="https://maps.google.com/?q=Hotel+Grand+Consort+Naha" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-slate-100 text-ocean-700 rounded-xl text-sm font-bold flex items-center justify-center gap-1.5 border border-ocean-200 hover:bg-ocean-50">
                 <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
               </a>
             </div>
 
-            <div class="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm space-y-2">
+            <div class="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm space-y-2.5">
               <span class="text-xs font-black text-ocean-700 bg-sky-100 px-2.5 py-0.5 rounded-lg">⏰ 16:00</span>
               <h4 class="text-base font-black text-slate-800">那霸國際通 散步探索</h4>
+              <div class="rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
+                <img src="https://lh3.googleusercontent.com/d/1UGdUx142MQqrIn2H-2ow6NbZjwjWGK2W" alt="那霸國際通 商店街" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1UGdUx142MQqrIn2H-2ow6NbZjwjWGK2W')">
+              </div>
               <p class="text-sm text-slate-600 leading-relaxed">熱鬧的繁華大街，沿途有黑糖、雪鹽冰淇淋與特產小店，邊走邊看輕鬆逛街。</p>
               <a href="https://maps.app.goo.gl/NSQhHajDJxcyadqv6" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-slate-100 text-ocean-700 rounded-xl text-sm font-bold flex items-center justify-center gap-1.5 border border-ocean-200 hover:bg-ocean-50">
                 <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
               </a>
             </div>
 
-            <div class="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm space-y-2">
+            <div class="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm space-y-2.5">
               <span class="text-xs font-black text-ocean-700 bg-sky-100 px-2.5 py-0.5 rounded-lg">⏰ 17:00</span>
               <h4 class="text-base font-black text-slate-800">第一牧志公設市場</h4>
+              <div class="rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
+                <img src="https://lh3.googleusercontent.com/d/1B6jS5fqnVbWf2Ppjvz4q8_K6bQjL39Tg" alt="第一牧志公設市場" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1B6jS5fqnVbWf2Ppjvz4q8_K6bQjL39Tg')">
+              </div>
               <p class="text-sm text-slate-600 leading-relaxed">一樓看鮮豔島魚和食材；二樓食堂可代客料理。想嚐鮮選烤蝦或清蒸熟魚，建議淺嚐勿過飽，留肚子給晚餐！</p>
               <a href="https://maps.google.com/?q=Makishi+Public+Market" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-slate-100 text-ocean-700 rounded-xl text-sm font-bold flex items-center justify-center gap-1.5 border border-ocean-200 hover:bg-ocean-50">
                 <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
               </a>
             </div>
 
-            <div class="bg-rose-50/60 border-2 border-rose-200 rounded-2xl p-4 shadow-sm space-y-2">
+            <div class="bg-rose-50/60 border-2 border-rose-200 rounded-2xl p-4 shadow-sm space-y-2.5">
               <div class="flex items-center justify-between">
                 <span class="bg-rose-500 text-white text-xs font-black px-3 py-1 rounded-xl">⏰ 20:30 預約晚餐</span>
                 <span class="text-xs font-black text-coral-600">頂級美味</span>
               </div>
               <h4 class="text-base font-black text-slate-800">石垣牛壽喜燒 康 (晚餐)</h4>
+              <div class="rounded-xl overflow-hidden border border-rose-200 bg-white">
+                <img src="https://lh3.googleusercontent.com/d/1D2VONEyLroD-QxcPVbo1eKUVWKsdKmE0" alt="石垣牛壽喜燒 康" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1D2VONEyLroD-QxcPVbo1eKUVWKsdKmE0')">
+              </div>
               <p class="text-sm text-slate-600 leading-relaxed">品嚐軟嫩的石垣牛壽喜燒，吸滿甘甜醬汁，肉質細嫩極適合長輩入口。</p>
               <a href="https://maps.google.com/?q=石垣牛すき焼き+康" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-rose-600 text-white rounded-xl text-sm font-black flex items-center justify-center gap-1.5 shadow hover:bg-rose-700">
                 <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -292,33 +288,42 @@
 
           <!-- PLAN B DETAIL CARDS -->
           <div id="plan-b-block" class="space-y-3 pl-2 border-l-4 border-amber-400 hidden">
-            <div class="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm space-y-2">
+            <div class="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm space-y-2.5">
               <div class="flex items-center justify-between">
                 <span class="text-xs font-black text-amber-800 bg-amber-100 px-2.5 py-0.5 rounded-lg">⏰ 15:15</span>
                 <span class="text-xs font-bold text-amber-700">面海白色階梯</span>
               </div>
               <h4 class="text-base font-black text-slate-800">瀨長島 Umikaji Terrace</h4>
+              <div class="rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
+                <img src="https://lh3.googleusercontent.com/d/1gUw7ZhDpMxtcTltomPEbpzwhS6lcCMM7" alt="瀨長島 Umikaji Terrace" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1gUw7ZhDpMxtcTltomPEbpzwhS6lcCMM7')">
+              </div>
               <p class="text-sm text-slate-600 leading-relaxed">面海純白階梯散步，在露天咖啡館喝飲料，吹海風看飛機降落與蔚藍海景。</p>
               <a href="https://maps.google.com/?q=Umikaji+Terrace+Senagajima" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-slate-100 text-ocean-700 rounded-xl text-sm font-bold flex items-center justify-center gap-1.5 border border-ocean-200 hover:bg-ocean-50">
                 <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
               </a>
             </div>
 
-            <div class="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm space-y-2">
+            <div class="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm space-y-2.5">
               <span class="text-xs font-black text-ocean-700 bg-sky-100 px-2.5 py-0.5 rounded-lg">⏰ 17:00</span>
               <h4 class="text-base font-black text-slate-800">Hotel Grand Consort Naha Check-in</h4>
+              <div class="rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
+                <img src="https://lh3.googleusercontent.com/d/1mXCt4Ggq_HEcSI4vY_fxcQw04iuKEkIc" alt="Hotel Grand Consort Naha" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1mXCt4Ggq_HEcSI4vY_fxcQw04iuKEkIc')">
+              </div>
               <p class="text-sm text-slate-600 leading-relaxed">開車回市區飯店辦理入住，在舒適客房內放鬆休息，準備享用大餐。</p>
               <a href="https://maps.google.com/?q=Hotel+Grand+Consort+Naha" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-slate-100 text-ocean-700 rounded-xl text-sm font-bold flex items-center justify-center gap-1.5 border border-ocean-200 hover:bg-ocean-50">
                 <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
               </a>
             </div>
 
-            <div class="bg-rose-50/60 border-2 border-rose-200 rounded-2xl p-4 shadow-sm space-y-2">
+            <div class="bg-rose-50/60 border-2 border-rose-200 rounded-2xl p-4 shadow-sm space-y-2.5">
               <div class="flex items-center justify-between">
                 <span class="bg-rose-500 text-white text-xs font-black px-3 py-1 rounded-xl">⏰ 18:30 預約晚餐</span>
                 <span class="text-xs font-black text-coral-600">提早用餐</span>
               </div>
               <h4 class="text-base font-black text-slate-800">石垣牛壽喜燒 康 (晚餐)</h4>
+              <div class="rounded-xl overflow-hidden border border-rose-200 bg-white">
+                <img src="https://lh3.googleusercontent.com/d/1D2VONEyLroD-QxcPVbo1eKUVWKsdKmE0" alt="石垣牛壽喜燒 康" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1D2VONEyLroD-QxcPVbo1eKUVWKsdKmE0')">
+              </div>
               <p class="text-sm text-slate-600 leading-relaxed">品嚐頂級石垣牛壽喜燒。餐後若大家還有體力，可順路悠閒散步國際通。</p>
               <a href="https://maps.google.com/?q=石垣牛すき焼き+康" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-rose-600 text-white rounded-xl text-sm font-black flex items-center justify-center gap-1.5 shadow hover:bg-rose-700">
                 <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -341,6 +346,9 @@
               <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">兩萬年遺跡</span>
             </div>
             <h3 class="text-base font-black text-slate-800">Gangala 之谷（ガンガラーの谷）</h3>
+            <div class="rounded-xl overflow-hidden border border-emerald-200 bg-emerald-50/50">
+              <img src="https://lh3.googleusercontent.com/d/13BkzC4qgrjG3FztDM9rcjbar_5Rz7Y4y" alt="Gangala 之谷" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '13BkzC4qgrjG3FztDM9rcjbar_5Rz7Y4y')">
+            </div>
             <p class="text-sm text-slate-600 leading-relaxed">由專業嚮導引領走進亞熱帶森林，仰望大葉雀榕神木，認識兩萬年前港川人遺跡。</p>
             <a href="https://maps.google.com/?q=Valley+of+Gangala" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-emerald-600 text-white rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow hover:bg-emerald-700">
               <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -350,6 +358,9 @@
           <div class="bg-white border-2 border-slate-100 rounded-2xl p-4 shadow-sm space-y-2.5">
             <span class="bg-ocean-100 text-ocean-800 text-xs font-black px-3 py-1 rounded-xl">⏰ 13:10</span>
             <h3 class="text-base font-black text-slate-800">沖繩世界文化王國（玉泉洞）</h3>
+            <div class="rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
+              <img src="https://lh3.googleusercontent.com/d/1vAUDQ05lEdfIab3CdwAzJlvv2Aon4SVM" alt="沖繩世界文化王國" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1vAUDQ05lEdfIab3CdwAzJlvv2Aon4SVM')">
+            </div>
             <p class="text-sm text-slate-600 leading-relaxed">走訪三十萬年鐘乳石奇景；時間充裕可在園內品嚐沖繩特有的泡沫「泡泡茶」。</p>
             <a href="https://maps.google.com/?q=Okinawa+World" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-ocean-600 text-white rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow hover:bg-ocean-700">
               <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -387,6 +398,9 @@
               <span class="text-xs font-black text-coral-600">阿古豬盛宴</span>
             </div>
             <h3 class="text-base font-black text-slate-800">Nakama 阿古豬涮涮鍋與島野菜料理</h3>
+            <div class="rounded-xl overflow-hidden border border-rose-200 bg-white">
+              <img src="https://lh3.googleusercontent.com/d/160CGU1npFbLvUvODXS3BM5_taFvY94zZ" alt="Nakama 阿古豬涮涮鍋" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '160CGU1npFbLvUvODXS3BM5_taFvY94zZ')">
+            </div>
             <p class="text-sm text-slate-600 leading-relaxed">薄切純種阿古豬輕涮幾秒入口即化，搭配甘甜島蔬菜，健康無負擔！</p>
             <a href="https://maps.app.goo.gl/oPahaabgkhrpm5G36" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-rose-600 text-white rounded-xl text-sm font-black flex items-center justify-center gap-2 shadow hover:bg-rose-700">
               <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -408,6 +422,9 @@
               <span class="text-xs font-black text-rose-700 bg-white px-2 py-0.5 rounded border border-rose-200">重要集合！</span>
             </div>
             <h3 class="text-lg font-black text-slate-800">嘉手納海釣體驗 集合報到處</h3>
+            <div class="rounded-xl overflow-hidden border border-rose-300 bg-white">
+              <img src="https://lh3.googleusercontent.com/d/1cdULMEuzH_zDGdtbbrvn1rpH28Ttjl-2" alt="嘉手納海釣體驗" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1cdULMEuzH_zDGdtbbrvn1rpH28Ttjl-2')">
+            </div>
             <p class="text-sm text-slate-700 leading-relaxed font-medium">請於 11:20 提早抵達並向船家報到！實際集合位置以預約通知為準。</p>
             <a href="https://maps.app.goo.gl/wpoEMcjwtyD4vjmV6?g_st=ac" target="_blank" rel="noopener noreferrer" class="w-full py-3 bg-rose-600 text-white rounded-xl text-sm font-black flex items-center justify-center gap-2 shadow-md hover:bg-rose-700 active:scale-95 transition">
               <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -423,7 +440,7 @@
             <p class="text-sm text-slate-600 leading-relaxed">陪爸爸體驗船釣樂趣！若釣到魚可安排餐廳代煮熟魚定食；<strong>如果有多釣到魚，可以帶到飯店隔天料理，飯店有廚房！</strong></p>
           </div>
 
-          <!-- 恩納之驛休息站 -->
+          <!-- 恩納之驛休息站 (無圖片) -->
           <div class="bg-white border-2 border-slate-100 rounded-2xl p-4 shadow-sm space-y-2.5">
             <div class="flex items-center justify-between">
               <span class="bg-amber-100 text-amber-900 text-xs font-black px-3 py-1 rounded-xl">順路推薦休息站</span>
@@ -439,6 +456,9 @@
           <div class="bg-gradient-to-r from-sky-50 to-blue-50 border-2 border-ocean-300 rounded-2xl p-4 shadow-sm space-y-2.5">
             <span class="bg-ocean-600 text-white text-xs font-black px-3 py-1 rounded-xl">傍晚 Check-in</span>
             <h3 class="text-base font-black text-slate-800">Ala MAHAINA CONDO HOTEL 入住</h3>
+            <div class="rounded-xl overflow-hidden border border-ocean-300 bg-white">
+              <img src="https://lh3.googleusercontent.com/d/1xT8yxI0PcsKriPvmWMgb24Kikr3fjSCi" alt="Ala MAHAINA CONDO HOTEL" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1xT8yxI0PcsKriPvmWMgb24Kikr3fjSCi')">
+            </div>
             <p class="text-sm text-slate-600 leading-relaxed">入住北部絕美海景公寓式飯店！附設完整廚房與展望大浴場，舒服泡湯看海。</p>
             <a href="https://maps.google.com/?q=Ala+Mahaina+Condo+Hotel" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-ocean-600 text-white rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow hover:bg-ocean-700">
               <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -454,6 +474,9 @@
               <span class="text-xs font-bold text-ocean-600 bg-sky-50 px-2 py-0.5 rounded">世界級水族館</span>
             </div>
             <h3 class="text-base font-black text-slate-800">沖繩美麗海水族館</h3>
+            <div class="rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
+              <img src="https://lh3.googleusercontent.com/d/1KHflEgt1FtvkZ0bGk8wBqD0nHKZXeh-s" alt="沖繩美麗海水族館" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1KHflEgt1FtvkZ0bGk8wBqD0nHKZXeh-s')">
+            </div>
             <p class="text-sm text-slate-600 leading-relaxed">在巨大水槽前近距離仰望鯨鯊與魟魚優游，全館平緩無障礙好走。</p>
             <a href="https://maps.google.com/?q=Okinawa+Churaumi+Aquarium" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-ocean-600 text-white rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow hover:bg-ocean-700">
               <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -466,6 +489,9 @@
               <span class="text-xs font-black text-amber-900 bg-amber-100 px-2 py-0.5 rounded">重要叮嚀</span>
             </div>
             <h3 class="text-base font-black text-slate-800">午餐：今帰仁そば (Nakijin Soba)</h3>
+            <div class="rounded-xl overflow-hidden border border-amber-300 bg-white">
+              <img src="https://lh3.googleusercontent.com/d/1gMP973DT5nXmMv4Hb8e48qiJ9wuBAQdP" alt="今帰仁そば" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1gMP973DT5nXmMv4Hb8e48qiJ9wuBAQdP')">
+            </div>
             <p class="text-sm text-slate-700 leading-relaxed font-medium">古民家氛圍高人氣沖繩麵！推薦長時間慢火燉到軟爛的「軟骨ソーキ麵」。</p>
             <div class="bg-white border-l-4 border-amber-500 p-2.5 rounded-xl text-xs text-amber-900 leading-relaxed font-bold">
               💡 <span class="underline">爸爸牙齒貼心提醒</span>：肉可以先試吃一小口感受軟嫩度；麵條彈牙有勁，細嚼慢嚥！
@@ -478,6 +504,9 @@
           <div class="bg-white border-2 border-slate-100 rounded-2xl p-4 shadow-sm space-y-2.5">
             <span class="bg-ocean-100 text-ocean-800 text-xs font-black px-3 py-1 rounded-xl">⏰ 15:00</span>
             <h3 class="text-base font-black text-slate-800">古宇利海洋塔 (Kouri Ocean Tower)</h3>
+            <div class="rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
+              <img src="https://lh3.googleusercontent.com/d/1TRbcxdwpt8Z-FST1zgE4kuC_O1gJRTn7" alt="古宇利海洋塔" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1TRbcxdwpt8Z-FST1zgE4kuC_O1gJRTn7')">
+            </div>
             <p class="text-sm text-slate-600 leading-relaxed">穿過古宇利大橋，搭自動小車登上景觀塔，360度俯瞰碧藍透明的古宇利藍海景。</p>
             <a href="https://maps.google.com/?q=Kouri+Ocean+Tower" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-ocean-600 text-white rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow hover:bg-ocean-700">
               <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -499,7 +528,7 @@
             <p class="text-sm text-slate-600 leading-relaxed">行李上車出發，沿著西海岸一路向南漫遊看海。</p>
           </div>
 
-          <!-- 許田休息站 -->
+          <!-- 許田休息站 (無圖片) -->
           <div class="bg-white border-2 border-slate-100 rounded-2xl p-4 shadow-sm space-y-2.5">
             <div class="flex items-center justify-between">
               <span class="bg-ocean-100 text-ocean-800 text-xs font-black px-3 py-1 rounded-xl">⏰ 11:30</span>
@@ -515,6 +544,9 @@
           <div class="bg-white border-2 border-slate-100 rounded-2xl p-4 shadow-sm space-y-2.5">
             <span class="bg-ocean-100 text-ocean-800 text-xs font-black px-3 py-1 rounded-xl">⏰ 12:20</span>
             <h3 class="text-base font-black text-slate-800">部瀨名海中公園</h3>
+            <div class="rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
+              <img src="https://lh3.googleusercontent.com/d/1pV1qxW8Rmq-mA7oa6Dm9lkF2xrEObE_1" alt="部瀨名海中公園" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1pV1qxW8Rmq-mA7oa6Dm9lkF2xrEObE_1')">
+            </div>
             <p class="text-sm text-slate-600 leading-relaxed">搭乘可愛的鯨魚造型玻璃底遊覽船出海觀賞熱帶魚群。</p>
             <a href="https://maps.google.com/?q=Busena+Marine+Park" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-ocean-600 text-white rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow hover:bg-ocean-700">
               <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -524,6 +556,9 @@
           <div class="bg-white border-2 border-slate-100 rounded-2xl p-4 shadow-sm space-y-2.5">
             <span class="bg-ocean-100 text-ocean-800 text-xs font-black px-3 py-1 rounded-xl">⏰ 14:00</span>
             <h3 class="text-base font-black text-slate-800">萬座毛 (Cape Manzamo)</h3>
+            <div class="rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
+              <img src="https://lh3.googleusercontent.com/d/1M2kkNB6fMIQKcJ-MyN7f9zzwyTX4qFe4" alt="萬座毛" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1M2kkNB6fMIQKcJ-MyN7f9zzwyTX4qFe4')">
+            </div>
             <p class="text-sm text-slate-600 leading-relaxed">欣賞如象鼻般佇立海中的珊瑚礁斷崖，新遊客中心步道平緩好散步。</p>
             <a href="https://maps.google.com/?q=Cape+Manzamo" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-ocean-600 text-white rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow hover:bg-ocean-700">
               <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -533,21 +568,33 @@
           <!-- 道之驛 嘉手納 (休息站) -->
           <div class="bg-white border-2 border-slate-100 rounded-2xl p-4 shadow-sm space-y-2.5">
             <div class="flex items-center justify-between">
-              <span class="bg-slate-200 text-slate-800 text-xs font-black px-3 py-1 rounded-xl">⏰ 15:55</span>
+              <span class="bg-slate-200 text-slate-800 text-xs font-black px-3 py-1 rounded-xl">⏰ 15:45</span>
               <span class="text-xs font-bold text-slate-600">戰機展望休息站</span>
             </div>
             <h3 class="text-base font-black text-slate-800">道之驛 嘉手納 休息站（Kadena 展望台）</h3>
+            <div class="rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
+              <img src="https://lh3.googleusercontent.com/d/1ZgoHP9GFkv-aW98fsUajdO7VgclF3G5K" alt="道之驛 嘉手納" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1ZgoHP9GFkv-aW98fsUajdO7VgclF3G5K')">
+            </div>
             <p class="text-sm text-slate-600 leading-relaxed">這座兼具公路休息站與國防景觀的道之驛，設有寬敞休息區與特色伴手禮。搭電梯直達四樓展望台，可遠眺美軍嘉手納空軍基地飛行場跑道起降，視野極佳。</p>
             <a href="https://maps.google.com/?q=Michi-no-Eki+Kadena" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-slate-100 text-ocean-700 rounded-xl text-sm font-bold flex items-center justify-center gap-2 border border-ocean-200 hover:bg-ocean-50">
               <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
             </a>
           </div>
 
-          <div class="bg-white border-2 border-slate-100 rounded-2xl p-4 shadow-sm space-y-2.5">
-            <span class="bg-amber-100 text-amber-900 text-xs font-black px-3 py-1 rounded-xl">⏰ 16:40 夕陽時分</span>
-            <h3 class="text-base font-black text-slate-800">美濱美國村</h3>
-            <p class="text-sm text-slate-600 leading-relaxed">在美式繽紛街區漫步，海濱步道吹風欣賞西海岸金黃落日。</p>
-            <a href="https://maps.google.com/?q=Mihama+American+Village" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-ocean-600 text-white rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow hover:bg-ocean-700">
+          <!-- D5 美國村 -->
+          <div class="bg-amber-50/80 border-2 border-amber-300 rounded-2xl p-4 shadow-sm space-y-2.5">
+            <div class="flex items-center justify-between">
+              <span class="bg-amber-500 text-slate-900 text-xs font-black px-3 py-1 rounded-xl shadow-sm">⏰ 16:30 抵達漫步</span>
+              <span class="text-xs font-black text-amber-900 bg-amber-100 px-2 py-0.5 rounded">🌅 今日日落 17:37</span>
+            </div>
+            <h3 class="text-base font-black text-slate-800">美濱美國村 (Mihama American Village)</h3>
+            <div class="rounded-xl overflow-hidden border border-amber-200 bg-amber-50/50">
+              <img src="https://lh3.googleusercontent.com/d/147rwv7D1bHFLbHPGT0m7vymuAWmMiIbw" alt="美濱美國村" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '147rwv7D1bHFLbHPGT0m7vymuAWmMiIbw')">
+            </div>
+            <p class="text-sm text-slate-700 leading-relaxed font-medium">
+              預計 16:30 抵達美式繽紛街區！此時陽光柔和舒適，先悠閒漫步特色街道、逛逛選物店。接著漫步到海濱步道吹海風，<strong>今日日落時間為 17:37</strong>，剛好能欣賞整片西海岸被金橘色夕陽染紅的絕美海景！
+            </p>
+            <a href="https://maps.google.com/?q=Mihama+American+Village" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-amber-500 text-slate-900 rounded-xl text-sm font-black flex items-center justify-center gap-2 shadow hover:bg-amber-400">
               <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
             </a>
           </div>
@@ -555,6 +602,9 @@
           <div class="bg-gradient-to-r from-sky-50 to-blue-50 border-2 border-ocean-300 rounded-2xl p-4 shadow-sm space-y-2.5">
             <span class="bg-ocean-600 text-white text-xs font-black px-3 py-1 rounded-xl">⏰ 18:40</span>
             <h3 class="text-base font-black text-slate-800">琉球 Orion Hotel 那霸國際通 Check-in</h3>
+            <div class="rounded-xl overflow-hidden border border-ocean-300 bg-white">
+              <img src="https://lh3.googleusercontent.com/d/1dEN5J8axc-U2Pu8FPUnVnKSB5R6emsqN" alt="琉球 Orion Hotel 那霸國際通" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1dEN5J8axc-U2Pu8FPUnVnKSB5R6emsqN')">
+            </div>
             <p class="text-sm text-slate-600 leading-relaxed">入住最後一晚那霸飯店，座落國際通旁，散發歡樂度假氣息。</p>
             <a href="https://maps.google.com/?q=Hotel+Royal+Orion+Naha" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-white text-ocean-700 rounded-xl text-sm font-bold flex items-center justify-center gap-2 border border-ocean-300 hover:bg-ocean-50">
               <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -588,6 +638,9 @@
               <span class="text-xs font-black text-amber-900">長輩首選</span>
             </div>
             <h3 class="text-base font-black text-slate-800">糸滿漁民食堂 那霸機場店</h3>
+            <div class="rounded-xl overflow-hidden border border-amber-300 bg-white">
+              <img src="https://lh3.googleusercontent.com/d/1TRAWkZpa4Z7PPpobhlQfa_A0GnIsT_G4" alt="糸滿漁民食堂 那霸機場店" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '1TRAWkZpa4Z7PPpobhlQfa_A0GnIsT_G4')">
+            </div>
             <p class="text-sm text-slate-700 leading-relaxed font-medium">適合爸爸挑選香氣四溢的香煎熟魚定食，魚肉細嫩少刺好咀嚼。💡 <strong class="text-amber-900">注意：此機場店位於航廈外。</strong></p>
             <a href="https://maps.google.com/?q=糸満漁民食堂+那覇空港" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-amber-500 text-slate-900 rounded-xl text-sm font-black flex items-center justify-center gap-2 shadow hover:bg-amber-400">
               <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -597,6 +650,9 @@
           <div class="bg-white border-2 border-slate-100 rounded-2xl p-4 shadow-sm space-y-2.5">
             <span class="bg-ocean-100 text-ocean-800 text-xs font-black px-3 py-1 rounded-xl">⏰ 12:45 – 14:05</span>
             <h3 class="text-base font-black text-slate-800">ASHIBINAA Outlet 奧特萊斯購物城</h3>
+            <div class="rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
+              <img src="https://lh3.googleusercontent.com/d/16rYk87ERoqXJ-0GpjnxWXHO_5rLamnzu" alt="ASHIBINAA Outlet 奧特萊斯購物城" class="w-full h-auto object-contain block mx-auto" onerror="handleSpotImgError(this, '16rYk87ERoqXJ-0GpjnxWXHO_5rLamnzu')">
+            </div>
             <p class="text-sm text-slate-600 leading-relaxed">回程前悠閒採購時光，挑選知名品牌或美味特產。約 14:05 準時集合開車離開。</p>
             <a href="https://maps.google.com/?q=Okinawa+Outlet+Mall+Ashibinaa" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-slate-100 text-ocean-700 rounded-xl text-sm font-bold flex items-center justify-center gap-2 border border-ocean-200 hover:bg-ocean-50">
               <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -728,7 +784,7 @@
               </a>
             </article>
 
-            <!-- 那霸國際通 (指定短網址) -->
+            <!-- 那霸國際通 -->
             <article class="bg-white border-2 border-slate-100 rounded-2xl p-4 shadow-sm flex flex-col justify-between space-y-2.5">
               <div class="space-y-2.5">
                 <div class="flex items-center justify-between">
@@ -924,7 +980,7 @@
               </a>
             </article>
 
-            <!-- 恩納之驛 (休息站說明) -->
+            <!-- 恩納之驛 (無圖) -->
             <article class="bg-white border-2 border-slate-100 rounded-2xl p-4 shadow-sm flex flex-col justify-between space-y-2.5">
               <div class="space-y-2.5">
                 <div class="flex items-center justify-between">
@@ -1049,7 +1105,7 @@
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-            <!-- 許田休息站 -->
+            <!-- 許田休息站 (無圖片) -->
             <article class="bg-white border-2 border-slate-100 rounded-2xl p-4 shadow-sm flex flex-col justify-between space-y-2.5">
               <div class="space-y-2.5">
                 <div class="flex items-center justify-between">
@@ -1110,7 +1166,7 @@
               </a>
             </article>
 
-            <!-- 道之驛 嘉手納 (休息站加強說明) -->
+            <!-- 道之驛 嘉手納 (休息站) -->
             <article class="bg-white border-2 border-slate-100 rounded-2xl p-4 shadow-sm flex flex-col justify-between space-y-2.5">
               <div class="space-y-2.5">
                 <div class="flex items-center justify-between">
@@ -1136,8 +1192,8 @@
             <article class="bg-white border-2 border-slate-100 rounded-2xl p-4 shadow-sm flex flex-col justify-between space-y-2.5">
               <div class="space-y-2.5">
                 <div class="flex items-center justify-between">
-                  <span class="bg-amber-100 text-amber-900 text-xs font-black px-2.5 py-1 rounded-lg">Day 5 夕陽散步</span>
-                  <span class="text-xs text-amber-800 font-bold">北谷町</span>
+                  <span class="bg-amber-100 text-amber-900 text-xs font-black px-2.5 py-1 rounded-lg">Day 5 16:30 抵達漫步</span>
+                  <span class="text-xs text-amber-800 font-bold">日落 17:37</span>
                 </div>
                 <h4 class="text-base sm:text-lg font-black text-slate-800">美濱美國村 (Mihama American Village)</h4>
                 
@@ -1146,7 +1202,7 @@
                 </div>
 
                 <p class="text-sm text-slate-600 leading-relaxed font-medium">
-                  洋溢美式異國風情的繽紛街區！海濱步道平緩好散步，傍晚伴隨海風欣賞將天際染成金橘色的西海岸落日，愜意無比。
+                  洋溢美式異國風情的繽紛街區！預計 16:30 抵達漫步，海濱步道平緩好走，伴隨海風欣賞 17:37 將天際染成金橘色的西海岸落日，愜意無比。
                 </p>
               </div>
               <a href="https://maps.google.com/?q=Mihama+American+Village" target="_blank" rel="noopener noreferrer" class="w-full py-3 ocean-gradient text-white rounded-xl text-base font-black flex items-center justify-center gap-2 shadow-md hover:opacity-95 active:scale-95 transition">
@@ -1572,7 +1628,7 @@
       </div>
     </div>
 
-    <!-- FULLSCREEN IMAGE ZOOM MODAL -->
+    <!-- FULLSCREEN IMAGE ZOOM MODAL (專供全景大地圖使用) -->
     <div id="imageZoomModal" class="modal-hidden fixed inset-0 z-[60] bg-slate-950/95 backdrop-blur-md flex-col justify-between transition-all select-none">
       <div class="flex items-center justify-between px-4 py-3 bg-slate-900/90 border-b border-white/10 z-20">
         <div class="flex items-center gap-2.5 text-white">
