@@ -19,11 +19,9 @@
   <meta name="twitter:description" content="姜老爺與姜小姐的沖繩父女小旅行，一起看海、吃美食、慢慢走走，把屬於我們的可愛回憶一點一點收藏起來 🐷🌺🌊">
   <meta name="twitter:image" content="https://lh3.googleusercontent.com/d/1PM7NHGsgEyF6kF6laVscor16mD4mh9_c">
 
-  <!-- Mobile Home Screen Favicons & App Meta -->
-  <link rel="icon" type="image/jpeg" href="https://lh3.googleusercontent.com/d/11p1i5sZTcVhtfcU5u642QsZTRG6rQ_An
-">
-  <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/11p1i5sZTcVhtfcU5u642QsZTRG6rQ_An
-">
+  <!-- Mobile Home Screen Favicons & App Meta (專屬 favicon 網址) -->
+  <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/11p1i5sZTcVhtfcU5u642QsZTRG6rQ_An">
+  <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/11p1i5sZTcVhtfcU5u642QsZTRG6rQ_An">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -131,19 +129,19 @@
 
   <div class="w-full max-w-md md:max-w-3xl lg:max-w-6xl xl:max-w-7xl bg-white min-h-screen shadow-2xl flex flex-col relative content-container">
 
-    <!-- Responsive Header -->
-    <header class="ocean-gradient text-white px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3 shadow-md sticky top-0 z-30 flex items-center justify-between gap-3">
+    <!-- Responsive Header (緊湊高度設計，釋放垂直閱讀空間) -->
+    <header class="ocean-gradient text-white px-3 sm:px-6 lg:px-8 h-11 sm:h-12 shadow-md sticky top-0 z-30 flex items-center justify-between gap-2">
       
       <!-- Logo & 標題 -->
-      <div class="flex items-center gap-2.5 min-w-0 flex-shrink-0">
-        <span class="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center text-lg shadow-inner flex-shrink-0">
+      <div class="flex items-center gap-2 min-w-0 flex-shrink-0">
+        <span class="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-sm sm:text-base shadow-inner flex-shrink-0">
           🐷
         </span>
         <div class="min-w-0">
-          <h1 class="text-base sm:text-lg lg:text-xl font-black font-display tracking-tight leading-none whitespace-nowrap">
+          <h1 class="text-sm sm:text-base lg:text-lg font-black font-display tracking-tight leading-none whitespace-nowrap">
             姜家豬豬沖繩旅行
           </h1>
-          <div class="text-[11px] sm:text-xs text-sky-100 font-bold mt-1 leading-none whitespace-nowrap">
+          <div class="text-[10px] sm:text-xs text-sky-100 font-bold mt-0.5 leading-none whitespace-nowrap">
             11/30 (一) – 12/5 (六) 專屬手冊
           </div>
         </div>
@@ -169,53 +167,53 @@
       </nav>
 
       <!-- Compact Button for Flights & Hotels -->
-      <button type="button" onclick="openModal('flightHotelModal')" class="flex-shrink-0 flex items-center gap-1 bg-gradient-to-b from-amber-300 to-amber-400 hover:from-amber-200 active:translate-y-0.5 text-slate-900 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xl border border-white/90 shadow-[0_2px_0_#b45309] text-xs font-black transition-all cursor-pointer" aria-label="查看機票與住宿">
+      <button type="button" onclick="openModal('flightHotelModal')" class="flex-shrink-0 flex items-center gap-1 bg-gradient-to-b from-amber-300 to-amber-400 hover:from-amber-200 active:translate-y-0.5 text-slate-900 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg border border-white/90 shadow-[0_1.5px_0_#b45309] text-[11px] sm:text-xs font-black transition-all cursor-pointer" aria-label="查看機票與住宿">
         <span class="tracking-tight leading-none">機票住宿</span>
-        <span class="bg-rose-600 text-white text-[9px] sm:text-[10px] px-1 py-0.5 rounded font-black leading-none shadow-sm">
+        <span class="bg-rose-600 text-white text-[9px] px-1 py-0.5 rounded font-black leading-none shadow-sm">
           點開
         </span>
       </button>
     </header>
 
     <!-- Main Content Area -->
-    <main class="flex-1 px-3.5 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-5">
+    <main class="flex-1 px-3 sm:px-6 lg:px-8 py-2.5 sm:py-4 space-y-3">
 
       <!-- ======================================================== -->
       <!-- TAB 1: PLAN (每日詳細行程表)                               -->
       <!-- ======================================================== -->
-      <section id="tab-plan" class="tab-pane active space-y-4">
+      <section id="tab-plan" class="tab-pane active space-y-2.5">
 
-        <!-- Day Selector Pill Bar -->
-        <div class="space-y-2.5">
-          <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 px-0.5 lg:grid lg:grid-cols-6 lg:gap-2.5">
-            <button type="button" onclick="selectDay(1)" class="day-tab-btn active px-4 py-2.5 rounded-2xl text-sm font-black transition whitespace-nowrap shadow-md bg-ocean-600 text-white flex-shrink-0 text-center" data-day="1">
+        <!-- Day Selector Pill Bar (吸頂固定，大小一致不突變) -->
+        <div class="sticky top-11 sm:top-12 z-20 bg-white/95 backdrop-blur-md -mx-3 sm:-mx-6 lg:-mx-8 px-3 sm:px-6 lg:px-8 pt-1 pb-2 border-b border-slate-200/70 shadow-xs space-y-1.5">
+          <div id="day-pill-container" class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5 px-0.5 lg:grid lg:grid-cols-6 lg:gap-2">
+            <button type="button" onclick="selectDay(1)" class="day-tab-btn active px-3 py-1.5 rounded-xl text-xs sm:text-sm font-black transition whitespace-nowrap shadow-sm bg-ocean-600 text-white flex-shrink-0 text-center" data-day="1">
               D1 11/30 (一)
             </button>
-            <button type="button" onclick="selectDay(2)" class="day-tab-btn px-4 py-2.5 rounded-2xl text-sm font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 flex-shrink-0 text-center" data-day="2">
+            <button type="button" onclick="selectDay(2)" class="day-tab-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 flex-shrink-0 text-center" data-day="2">
               D2 12/1 (二)
             </button>
-            <button type="button" onclick="selectDay(3)" class="day-tab-btn px-4 py-2.5 rounded-2xl text-sm font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 flex-shrink-0 text-center" data-day="3">
+            <button type="button" onclick="selectDay(3)" class="day-tab-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 flex-shrink-0 text-center" data-day="3">
               D3 12/2 (三)
             </button>
-            <button type="button" onclick="selectDay(4)" class="day-tab-btn px-4 py-2.5 rounded-2xl text-sm font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 flex-shrink-0 text-center" data-day="4">
+            <button type="button" onclick="selectDay(4)" class="day-tab-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 flex-shrink-0 text-center" data-day="4">
               D4 12/3 (四)
             </button>
-            <button type="button" onclick="selectDay(5)" class="day-tab-btn px-4 py-2.5 rounded-2xl text-sm font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 flex-shrink-0 text-center" data-day="5">
+            <button type="button" onclick="selectDay(5)" class="day-tab-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 flex-shrink-0 text-center" data-day="5">
               D5 12/4 (五)
             </button>
-            <button type="button" onclick="selectDay(6)" class="day-tab-btn px-4 py-2.5 rounded-2xl text-sm font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 flex-shrink-0 text-center" data-day="6">
+            <button type="button" onclick="selectDay(6)" class="day-tab-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 flex-shrink-0 text-center" data-day="6">
               D6 12/5 (六)
             </button>
           </div>
 
-          <!-- Quick Day Prev / Next Buttons -->
-          <div class="flex items-center justify-between px-1 text-xs text-slate-500 font-bold bg-slate-50 p-2 rounded-2xl border border-slate-200/60">
-            <button type="button" onclick="stepDay(-1)" class="flex items-center gap-1.5 py-1.5 px-3 rounded-xl bg-white text-slate-700 hover:bg-slate-100 shadow-sm active:scale-95 transition">
-              <i class="fa-solid fa-chevron-left"></i> 上一天
+          <!-- Quick Day Prev / Next Buttons (長輩好點擊且不變形) -->
+          <div class="flex items-center justify-between px-2 text-xs text-slate-500 font-bold bg-slate-50 py-1 px-2.5 rounded-xl border border-slate-200/60">
+            <button type="button" onclick="stepDay(-1)" class="flex items-center gap-1 py-1 px-2.5 rounded-lg bg-white text-slate-700 hover:bg-slate-100 shadow-xs active:scale-95 transition text-xs font-bold">
+              <i class="fa-solid fa-chevron-left text-[10px]"></i> 上一天
             </button>
-            <span id="current-day-label" class="text-sm sm:text-base font-black text-ocean-700 font-display">第 1 天｜抵達沖繩與市區</span>
-            <button type="button" onclick="stepDay(1)" class="flex items-center gap-1.5 py-1.5 px-3 rounded-xl bg-white text-slate-700 hover:bg-slate-100 shadow-sm active:scale-95 transition">
-              下一天 <i class="fa-solid fa-chevron-right"></i>
+            <span id="current-day-label" class="text-xs sm:text-sm font-black text-ocean-700 font-display">第 1 天｜抵達沖繩與市區</span>
+            <button type="button" onclick="stepDay(1)" class="flex items-center gap-1 py-1 px-2.5 rounded-lg bg-white text-slate-700 hover:bg-slate-100 shadow-xs active:scale-95 transition text-xs font-bold">
+              下一天 <i class="fa-solid fa-chevron-right text-[10px]"></i>
             </button>
           </div>
         </div>
@@ -332,13 +330,13 @@
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
                     <span class="bg-rose-500 text-white text-xs font-black px-3 py-1 rounded-xl">⏰ 20:30 預約晚餐</span>
-                    <span class="text-xs font-black text-coral-600">頂級美味</span>
+                    <span class="text-xs font-black text-coral-600 bg-white px-2 py-0.5 rounded border border-rose-200">超高 CP 值</span>
                   </div>
                   <h4 class="text-base sm:text-lg font-black text-slate-800">石垣牛壽喜燒 康 (晚餐)</h4>
                   <div class="rounded-xl overflow-hidden border border-rose-200 bg-white">
                     <img src="https://lh3.googleusercontent.com/d/1D2VONEyLroD-QxcPVbo1eKUVWKsdKmE0" alt="石垣牛壽喜燒 康" class="w-full h-auto object-contain block mx-auto max-h-72" onerror="handleSpotImgError(this, '1D2VONEyLroD-QxcPVbo1eKUVWKsdKmE0')">
                   </div>
-                  <p class="text-sm text-slate-600 leading-relaxed">品嚐軟嫩的石垣牛壽喜燒，吸滿甘甜醬汁，肉質細嫩極適合長輩入口。</p>
+                  <p class="text-sm text-slate-600 leading-relaxed font-medium">高 CP 值石垣牛壽喜燒專賣店！品嚐軟嫩的頂級石垣牛，吸滿甘甜醬汁，肉質細嫩極適合長輩入口。</p>
                 </div>
                 <a href="https://maps.google.com/?q=石垣牛すき焼き+康" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-rose-600 text-white rounded-xl text-sm font-black flex items-center justify-center gap-1.5 shadow hover:bg-rose-700">
                   <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -387,13 +385,13 @@
                 <div class="space-y-2.5">
                   <div class="flex items-center justify-between">
                     <span class="bg-rose-500 text-white text-xs font-black px-3 py-1 rounded-xl">⏰ 18:30 預約晚餐</span>
-                    <span class="text-xs font-black text-coral-600">提早用餐</span>
+                    <span class="text-xs font-black text-coral-600 bg-white px-2 py-0.5 rounded border border-rose-200">超高 CP 值</span>
                   </div>
                   <h4 class="text-base sm:text-lg font-black text-slate-800">石垣牛壽喜燒 康 (晚餐)</h4>
                   <div class="rounded-xl overflow-hidden border border-rose-200 bg-white">
                     <img src="https://lh3.googleusercontent.com/d/1D2VONEyLroD-QxcPVbo1eKUVWKsdKmE0" alt="石垣牛壽喜燒 康" class="w-full h-auto object-contain block mx-auto max-h-72" onerror="handleSpotImgError(this, '1D2VONEyLroD-QxcPVbo1eKUVWKsdKmE0')">
                   </div>
-                  <p class="text-sm text-slate-600 leading-relaxed">品嚐頂級石垣牛壽喜燒。餐後若大家還有體力，可順路悠閒散步國際通。</p>
+                  <p class="text-sm text-slate-600 leading-relaxed font-medium">高 CP 值石垣牛壽喜燒！品嚐頂級石垣牛，餐後若大家還有體力，可順路悠閒散步國際通。</p>
                 </div>
                 <a href="https://maps.google.com/?q=石垣牛すき焼き+康" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-rose-600 text-white rounded-xl text-sm font-black flex items-center justify-center gap-1.5 shadow hover:bg-rose-700">
                   <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -484,7 +482,7 @@
                 <div class="rounded-xl overflow-hidden border border-rose-200 bg-white">
                   <img src="https://lh3.googleusercontent.com/d/160CGU1npFbLvUvODXS3BM5_taFvY94zZ" alt="Nakama 阿古豬涮涮鍋" class="w-full h-auto object-contain block mx-auto max-h-72" onerror="handleSpotImgError(this, '160CGU1npFbLvUvODXS3BM5_taFvY94zZ')">
                 </div>
-                <p class="text-sm text-slate-600 leading-relaxed">薄切純種阿古豬輕涮幾秒入口即化，搭配甘甜島蔬菜，健康無負擔！</p>
+                <p class="text-sm text-slate-600 leading-relaxed font-medium">薄切純種阿古豬輕涮幾秒入口即化，店內提供<strong>高級蔬菜與小菜吃到飽</strong>，搭配甘甜島蔬菜，健康豐盛無負擔！</p>
               </div>
               <a href="https://maps.app.goo.gl/oPahaabgkhrpm5G36" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-rose-600 text-white rounded-xl text-sm font-black flex items-center justify-center gap-2 shadow hover:bg-rose-700">
                 <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -512,22 +510,21 @@
                 <div class="rounded-xl overflow-hidden border border-rose-300 bg-white">
                   <img src="https://lh3.googleusercontent.com/d/1cdULMEuzH_zDGdtbbrvn1rpH28Ttjl-2" alt="嘉手納海釣體驗" class="w-full h-auto object-contain block mx-auto max-h-72" onerror="handleSpotImgError(this, '1cdULMEuzH_zDGdtbbrvn1rpH28Ttjl-2')">
                 </div>
-                <p class="text-sm text-slate-700 leading-relaxed font-medium">請於 11:20 提早抵達並向船家報到！實際集合位置以預約通知為準。</p>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  請於 11:20 提早抵達並向船家報到！體驗船釣樂趣！若釣到魚可安排餐廳代煮熟魚定食；如果有多釣到魚，可以帶到飯店隔天料理，飯店有廚房！
+                </p>
+                <!-- 老爸加油重點高亮提示 -->
+                <div class="pt-1">
+                  <div class="inline-flex items-center gap-2 bg-gradient-to-r from-red-600 via-orange-500 to-amber-500 text-white font-black text-base px-4 py-2 rounded-2xl shadow-lg ring-2 ring-amber-300 tracking-wider animate-bounce">
+                    <span>🔥 🎣</span>
+                    <span>老爸加油！！</span>
+                    <span>🐟 🌊</span>
+                  </div>
+                </div>
               </div>
-              <a href="https://maps.app.goo.gl/wpoEMcjwtyD4vjmV6?g_st=ac" target="_blank" rel="noopener noreferrer" class="w-full py-3 bg-rose-600 text-white rounded-xl text-sm font-black flex items-center justify-center gap-2 shadow-md hover:bg-rose-700 active:scale-95 transition">
+              <a href="https://maps.app.goo.gl/wpoEMcjwtyD4vjmV6?g_st=ac" target="_blank" rel="noopener noreferrer" class="w-full py-3 bg-rose-600 text-white rounded-xl text-sm font-black flex items-center justify-center gap-2 shadow-md hover:bg-rose-700 active:scale-95 transition mt-2">
                 <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
               </a>
-            </div>
-
-            <div class="bg-white border-2 border-sky-100 rounded-2xl p-4 shadow-sm space-y-2.5 flex flex-col justify-between">
-              <div class="space-y-2">
-                <div class="flex items-center justify-between">
-                  <span class="bg-ocean-100 text-ocean-800 text-xs font-black px-3 py-1 rounded-xl">⏰ 11:30 出海</span>
-                  <span class="text-xs font-bold text-ocean-600">長輩初體驗</span>
-                </div>
-                <h3 class="text-base sm:text-lg font-black text-slate-800">溫馨海釣體驗（陪爸爸第一次船釣）</h3>
-                <p class="text-sm text-slate-600 leading-relaxed">陪爸爸體驗船釣樂趣！若釣到魚可安排餐廳代煮熟魚定食；<strong>如果有多釣到魚，可以帶到飯店隔天料理，飯店有廚房！</strong></p>
-              </div>
             </div>
 
             <!-- 恩納之驛休息站 -->
@@ -545,7 +542,7 @@
               </a>
             </div>
 
-            <div class="bg-gradient-to-r from-sky-50 to-blue-50 border-2 border-ocean-300 rounded-2xl p-4 shadow-sm space-y-2.5 flex flex-col justify-between">
+            <div class="bg-gradient-to-r from-sky-50 to-blue-50 border-2 border-ocean-300 rounded-2xl p-4 shadow-sm space-y-2.5 flex flex-col justify-between lg:col-span-2">
               <div class="space-y-2.5">
                 <span class="bg-ocean-600 text-white text-xs font-black px-3 py-1 rounded-xl">傍晚 Check-in</span>
                 <h3 class="text-base sm:text-lg font-black text-slate-800">Ala MAHAINA CONDO HOTEL 入住</h3>
@@ -738,7 +735,10 @@
                   <span class="text-xs font-black text-rose-700">島唄三線現場</span>
                 </div>
                 <h3 class="text-base sm:text-lg font-black text-slate-800">居酒屋 とぅばらーま</h3>
-                <p class="text-sm text-slate-600 leading-relaxed">享用沖繩鄉土料理，沉浸在島唄民謠與三線琴現場演出中。</p>
+                <div class="rounded-xl overflow-hidden border border-rose-200 bg-white">
+                  <img src="https://lh3.googleusercontent.com/d/1Nc1C7Lv6iNaRk3SIws-vm_yrdheX91qq" alt="居酒屋 とぅばらーま" class="w-full h-auto object-contain block mx-auto max-h-72" onerror="handleSpotImgError(this, '1Nc1C7Lv6iNaRk3SIws-vm_yrdheX91qq')">
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed font-medium">享用沖繩鄉土料理，沉浸在島唄民謠與三線琴現場演出中。</p>
               </div>
               <a href="https://maps.google.com/?q=Tubara-ma+Naha" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-rose-600 text-white rounded-xl text-sm font-black flex items-center justify-center gap-2 shadow hover:bg-rose-700">
                 <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -766,7 +766,7 @@
                 <div class="rounded-xl overflow-hidden border border-amber-300 bg-white">
                   <img src="https://lh3.googleusercontent.com/d/1TRAWkZpa4Z7PPpobhlQfa_A0GnIsT_G4" alt="糸滿漁民食堂 那霸機場店" class="w-full h-auto object-contain block mx-auto max-h-72" onerror="handleSpotImgError(this, '1TRAWkZpa4Z7PPpobhlQfa_A0GnIsT_G4')">
                 </div>
-                <p class="text-sm text-slate-700 leading-relaxed font-medium">適合爸爸挑選香氣四溢的奶油煎魚定食，魚肉細嫩少刺好咀嚼。💡 <strong class="text-amber-900">注意：此機場店位於航廈外。</strong></p>
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">適合爸爸挑選香氣四溢的香煎熟魚定食，魚肉細嫩少刺好咀嚼。</p>
               </div>
               <a href="https://maps.google.com/?q=糸満漁民食堂+那覇空港" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-amber-500 text-slate-900 rounded-xl text-sm font-black flex items-center justify-center gap-2 shadow hover:bg-amber-400">
                 <i class="fa-solid fa-map-location-dot"></i> Google maps看更多
@@ -957,7 +957,7 @@
               <div class="space-y-2.5">
                 <div class="flex items-center justify-between">
                   <span class="coral-badge text-white text-xs font-black px-2.5 py-1 rounded-lg shadow-sm">Day 1 預約晚餐</span>
-                  <span class="text-xs font-black text-rose-700">頂級牛肉</span>
+                  <span class="text-xs font-black text-rose-700">超高 CP 值</span>
                 </div>
                 <h4 class="text-base sm:text-lg font-black text-slate-800">石垣牛壽喜燒 康</h4>
                 
@@ -966,7 +966,7 @@
                 </div>
 
                 <p class="text-sm text-slate-700 leading-relaxed font-medium">
-                  這家是CP值超高的嚴選頂級石垣牛，油花細緻。放入甘甜壽喜燒醬汁中稍微輕涮即軟嫩化口，肉質細軟適合長輩，配上鮮甜野菜暖心又滿足！
+                  超高 CP 值的美味饗宴！嚴選頂級石垣牛，油花細緻。放入甘甜壽喜燒醬汁中稍微輕涮即軟嫩化口，肉質細軟適合長輩，配上鮮甜野菜暖心又滿足！
                 </p>
               </div>
               <a href="https://maps.google.com/?q=石垣牛すき焼き+康" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-sm font-black flex items-center justify-center gap-2 shadow-md active:scale-95 transition">
@@ -1064,7 +1064,7 @@
                 </div>
 
                 <p class="text-sm text-slate-700 leading-relaxed font-medium">
-                  沖繩國寶純種阿古豬（Agu），油花均勻甘甜不膩，膽固醇僅一般豬肉四分之一，配上新鮮島蔬菜以及小菜吃到飽，健康又舒暢。
+                  沖繩國寶純種阿古豬（Agu），油花均勻甘甜不膩，膽固醇僅一般豬肉四分之一，配上新鮮島蔬菜，健康又舒暢。
                 </p>
               </div>
               <a href="https://maps.app.goo.gl/oPahaabgkhrpm5G36" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-sm font-black flex items-center justify-center gap-2 shadow-md active:scale-95 transition">
@@ -1355,6 +1355,28 @@
                 <span>🗺️</span> Google maps看更多
               </a>
             </article>
+
+            <!-- 居酒屋 とぅばらーま (導覽卡片) -->
+            <article class="bg-rose-50/70 border-2 border-rose-200 rounded-2xl p-4 shadow-sm flex flex-col justify-between space-y-2.5">
+              <div class="space-y-2.5">
+                <div class="flex items-center justify-between">
+                  <span class="coral-badge text-white text-xs font-black px-2.5 py-1 rounded-lg shadow-sm">Day 5 19:30 預約晚餐</span>
+                  <span class="text-xs font-black text-rose-700">島唄三線現場</span>
+                </div>
+                <h4 class="text-base sm:text-lg font-black text-slate-800">居酒屋 とぅばらーま（沖繩民謠居酒屋）</h4>
+                
+                <div class="rounded-xl overflow-hidden border border-rose-200 bg-white shadow-inner">
+                  <img src="https://lh3.googleusercontent.com/d/1Nc1C7Lv6iNaRk3SIws-vm_yrdheX91qq" alt="居酒屋 とぅばらーま" class="w-full h-auto object-contain block mx-auto max-h-56" onerror="handleSpotImgError(this, '1Nc1C7Lv6iNaRk3SIws-vm_yrdheX91qq')">
+                </div>
+
+                <p class="text-sm text-slate-700 leading-relaxed font-medium">
+                  位於國際通旁的道地沖繩民謠料理店。品嚐傳統鄉土料理、沖繩炒苦瓜與在地佳餚，現場更有三線琴與島唄歌手熱情開唱，氣氛熱鬧溫馨！
+                </p>
+              </div>
+              <a href="https://maps.google.com/?q=Tubara-ma+Naha" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-sm font-black flex items-center justify-center gap-2 shadow-md active:scale-95 transition">
+                <span>🗺️</span> Google maps看更多
+              </a>
+            </article>
           </div>
         </div>
 
@@ -1380,7 +1402,7 @@
                 </div>
 
                 <p class="text-sm text-slate-700 leading-relaxed font-medium">
-                  特別適合爸爸挑選香濃熱騰騰的奶油香煎烤魚定食或醬汁煮魚，魚肉細軟少刺、好咀嚼又營養！💡 <strong>注意：此機場店位於航廈外</strong>。
+                  特別適合爸爸挑選香濃熱騰騰的奶油香煎烤魚定食或醬汁煮魚，魚肉細軟少刺、好咀嚼又營養！
                 </p>
               </div>
               <a href="https://maps.google.com/?q=糸満漁民食堂+那覇空港" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-amber-500 hover:bg-amber-400 text-slate-900 rounded-xl text-sm font-black flex items-center justify-center gap-2 shadow-md active:scale-95 transition">
@@ -1884,15 +1906,18 @@
     };
 
     const DEFAULT_CHECKLIST_ITEMS = [
-      { id: 'c1', text: '護照正本（有效期限需 6 個月以上）', checked: true },
-      { id: 'c2', text: '台灣駕照正本 ＋ 日文譯本（自駕必備雙證件）', checked: true },
-      { id: 'c3', text: 'Visit Japan Web (VJW) 申報完成截圖', checked: true },
+      { id: 'c1', text: '護照正本（有效期限需 6 個月以上）', checked: false },
+      { id: 'c2', text: '台灣駕照正本 ＋ 日文譯本（自駕必備雙證件）', checked: false },
+      { id: 'c3', text: 'Visit Japan Web (VJW) 申報完成截圖', checked: false },
       { id: 'c4', text: '日幣現金準備（市場、投幣機需用現金）', checked: false },
-      { id: 'c5', text: '海外刷卡高回饋信用卡 2 張備用', checked: false },
-      { id: 'c6', text: '日本 eSIM / 國際漫遊已開通', checked: false },
-      { id: 'c7', text: '爸爸專屬常備藥品、胃腸藥、暈船藥（海釣備用）', checked: false },
-      { id: 'c8', text: '遮陽帽、太陽眼鏡、輕便防風外套', checked: false },
-      { id: 'c9', text: '行動電源與手機充電線', checked: false }
+      { id: 'c5', text: '日本 eSIM / 國際漫遊已開通', checked: false },
+      { id: 'c6', text: '爸爸專屬常備藥品、胃腸藥、暈船藥（海釣備用）', checked: false },
+      { id: 'c7', text: '遮陽帽、太陽眼鏡、輕便防風外套', checked: false },
+      { id: 'c8', text: '行動電源與手機充電線', checked: false },
+      { id: 'c9', text: '【隨身行李】行動電源／鋰電池／打火機務必隨身（嚴禁託運）', checked: false },
+      { id: 'c10', text: '【隨身行李】護照正本、貴重物品、重要常備藥品隨身攜帶', checked: false },
+      { id: 'c11', text: '【託運行李】液體／乳液／噴霧單瓶超過 100ml 務必託運', checked: false },
+      { id: 'c12', text: '【託運行李】指甲刀、剪刀、美工刀等金屬利器務必放託運', checked: false }
     ];
 
     const DEFAULT_MEMOS = [
@@ -1912,6 +1937,23 @@
         date: '景點筆記'
       }
     ];
+
+    // 全局可靠置頂滾動工具函式
+    function scrollToTopReliably() {
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      requestAnimationFrame(() => {
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      });
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      }, 30);
+    }
 
     // 同步切換手機版與電腦桌機版的導航按鈕狀態
     function switchTab(tabId) {
@@ -1967,7 +2009,7 @@
           }
         });
 
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        scrollToTopReliably();
       } catch (err) {
         console.error('switchTab error:', err);
       }
@@ -2033,7 +2075,8 @@
       openModal('customConfirmModal');
     }
 
-    function selectDay(day) {
+    // 選擇特定天數（精確垂直置頂 + 獨立水平滑動，互不干擾）
+    function selectDay(day, shouldScroll = true) {
       currentDayIndex = parseInt(day, 10);
       document.querySelectorAll('.day-content').forEach(el => {
         el.classList.add('hidden');
@@ -2047,9 +2090,9 @@
       document.querySelectorAll('.day-tab-btn').forEach(btn => {
         const d = parseInt(btn.getAttribute('data-day'), 10);
         if (d === currentDayIndex) {
-          btn.className = 'day-tab-btn active px-4 py-2.5 rounded-2xl text-sm font-black transition whitespace-nowrap shadow-md bg-ocean-600 text-white flex-shrink-0 text-center';
+          btn.className = 'day-tab-btn active px-3 py-1.5 rounded-xl text-xs sm:text-sm font-black transition whitespace-nowrap shadow-sm bg-ocean-600 text-white flex-shrink-0 text-center';
         } else {
-          btn.className = 'day-tab-btn px-4 py-2.5 rounded-2xl text-sm font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 flex-shrink-0 text-center';
+          btn.className = 'day-tab-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200 flex-shrink-0 text-center';
         }
       });
 
@@ -2057,13 +2100,26 @@
       if (label && DAY_TITLES[currentDayIndex]) {
         label.textContent = DAY_TITLES[currentDayIndex];
       }
+
+      // 1. 強制確保頁面垂直 100% 回到最上方起始錨點
+      if (shouldScroll) {
+        scrollToTopReliably();
+      }
+
+      // 2. 僅對水平按鈕容器進行純水平滑動置中（嚴禁使用 scrollIntoView 避免打斷垂直滾動）
+      const activeBtn = document.querySelector(`.day-tab-btn[data-day="${currentDayIndex}"]`);
+      const pillContainer = document.getElementById('day-pill-container');
+      if (activeBtn && pillContainer) {
+        const targetScrollLeft = activeBtn.offsetLeft - (pillContainer.clientWidth / 2) + (activeBtn.offsetWidth / 2);
+        pillContainer.scrollTo({ left: Math.max(0, targetScrollLeft), behavior: 'smooth' });
+      }
     }
 
     function stepDay(delta) {
       let nextDay = currentDayIndex + delta;
       if (nextDay < 1) nextDay = 6;
       if (nextDay > 6) nextDay = 1;
-      selectDay(nextDay);
+      selectDay(nextDay, true);
     }
 
     function switchDay1Plan(choice) {
